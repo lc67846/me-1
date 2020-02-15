@@ -5,7 +5,7 @@ color orange = color(255, 165, 0);
 color brown = color(70, 56, 30);
 color black = color(0, 0, 0);
 void setup() {
-  fullScreen();
+  size(800,600);
 }
 
 void draw() {

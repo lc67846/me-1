@@ -3,7 +3,7 @@ PVector gravity = new PVector(0, 0.2);
 PVector lift =new PVector(0, -0.21); 
 PVector wind;  
 void setup() {
-  fullScreen();
+  size(800,600);
   for (int i=0; i<100; i++)balloons.add(new balloon(new PVector(random(0, width), random(0, height))));
 }
 void draw() {

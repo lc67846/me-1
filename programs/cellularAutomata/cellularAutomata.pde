@@ -2,7 +2,7 @@ CA cell;
 int tick = 0,rate=20000;
 void setup() {
   cell = new CA();
-  fullScreen();
+  size(800,600);
   background(245);
   frameRate(rate);
 }

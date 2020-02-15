@@ -3,10 +3,9 @@
     <script src="processing.js"></script>
   </head>
   <body>
-  <canvas id = "loadcv" width="800" height="600" data-processing-sources="mapgen.pde"></canvas>
-<script>
-document.getElementById('loadcv').setAttribute('data-processing-sources', location.search.substring(1,location.search.length)+'.pde');
-console.log(location.search.substring(1,location.search.length)+'.pde');
-</script>  
-</body>
+    <canvas id = "loadcv" width="800" height="600" data-processing-sources="mapgen.pde"></canvas>
+    <script>
+        document.getElementById('loadcv').setAttribute('data-processing-sources', './'+location.search.substring(1,location.search.length)+'/'+location.search.substring(1,location.search.length)+'.pde');
+    </script>  
+  </body>
 </html>

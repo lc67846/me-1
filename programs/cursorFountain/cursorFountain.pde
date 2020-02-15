@@ -1,7 +1,7 @@
 ArrayList<Ball> balls = new ArrayList<Ball>();
 Liquid water;
 void setup() {
-  fullScreen();
+  size(800,600);
   water = new Liquid(0, 0.7*height, width, height, 0.1, color(0, 0, 255, 150));
 }
 void draw() {

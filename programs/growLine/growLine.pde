@@ -1,7 +1,7 @@
 Vehicle joe;
 
 void setup() {
-  fullScreen();
+  size(800,600);
   joe = new Vehicle(new PVector(width/2, height/2));
 }
 

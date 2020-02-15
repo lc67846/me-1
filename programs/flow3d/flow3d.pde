@@ -6,7 +6,7 @@ void setup() {
   sx=int(random(100,400));//create random playfield
   sy=int(random(100,400));
   sz=int(random(100,400));
-  fullScreen(P3D);
+  size(800,600,P3D);
   ff = new FlowField(15);
   for (int i=0; i<((sx+sy+sz)/30); i++) {
     vehicles.add(new Vehicle(new PVector(int(random(0,sx)), int(random(0,sy)), int(random(0, sz)))));//make vehicles based on size

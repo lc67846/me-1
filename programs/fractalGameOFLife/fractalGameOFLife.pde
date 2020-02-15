@@ -6,7 +6,7 @@ int [] pattern;
 boolean invert=false;
 boolean draw=false;
 void setup() {
-  fullScreen();
+  size(800,600);
   pattern = new int[width*height];
   for (int i = 0; i < height; i++) {
     pattern[(i*width)+width/2] = 1;
@@ -44,7 +44,7 @@ void draw() {
   rect(0, 0, width/3, height/3);
   fill(255);
   text("hold any key to toggle invert mode. \n Hold the mouse to draw, you can only draw on active regions.", 50, 50);
-  text("crazy: "+invert+"\n"+"draw: "+draw, 50, height/10);
+  text("crazy: "+invert+"\n"+"draw: "+draw, 50, 100);
 }
 
 

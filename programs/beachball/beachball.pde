@@ -1,7 +1,7 @@
 ArrayList<beachBall> beachballs = new ArrayList<beachBall>();
 ocean pl;
 void setup() {
-  fullScreen(P3D);
+  size(800,600,P3D);
   pl = new ocean(width/2, height/2, -100, 500, 200, 500);
   noStroke();
 }

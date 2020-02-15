@@ -1,6 +1,6 @@
 ArrayList<splat> splats = new ArrayList<splat>();
 void setup() {
-  fullScreen();
+  size(800,600);
   background(245);
   fill(0);
   text("click to make a paintsplat!",50,50);

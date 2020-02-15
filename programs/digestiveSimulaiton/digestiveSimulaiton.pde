@@ -6,7 +6,7 @@ ArrayList<Food> nuggets = new ArrayList<Food>();
 ArrayList<Water> drips = new ArrayList<Water>();
 
 void setup() {
-  fullScreen();
+  size(800,600);
   ff = new FlowField(15);
 }
 void draw() {

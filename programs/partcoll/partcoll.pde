@@ -4,7 +4,7 @@ PVector mouse;
 void setup() {
   mouse=new PVector(0, 0);
   setPiece = new crater();
-  fullScreen();
+  size(800,600);
 }
 
 

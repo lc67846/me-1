@@ -5,7 +5,7 @@ ArrayList<Star> starcrawl = new ArrayList<Star>();
 int bl=10, psecond, sh=0, lx, wallshade=0;
 boolean start=true, gameplay=false, dead=false;
 void setup() {
-  fullScreen();
+  size(800,600);
   lx=width/8;
   for (int i = 0; i<150; i++)starcrawl.add(new Star());
   noStroke();
@@ -22,7 +22,7 @@ void guiHandler() {
     textAlign(CENTER, CENTER);
     text("LINE DEFENDER", width/2, height/10);
     textSize(15);
-    text("Use the mouse to control your spaceship and click to fire, you can only fire behind the line. \n Your weapon will help in fending off the invaders attempting to repaint your wall an undesirable color \n click to continue", width/2, height/2);
+    text("Use the mouse to control your spaceship and click to fire, you can only fire behind the line. \n Your weapon will help in fending off the invaders \n click to continue", width/2, height/2);
     if (mousePressed) {
       gameplay=true;
       start=false;
