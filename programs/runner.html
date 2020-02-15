@@ -4,6 +4,9 @@
   </head>
   <body>
   <canvas id = "loadcv" width="800" height="600" data-processing-sources="mapgen.pde"></canvas>
-  <p onLoad="document.getElementById('loadcv').setAttribute('data-processing-sources', location.search.substring(1,location.search.length)+'.pde')"></p>
-  </body>
+<script>
+document.getElementById('loadcv').setAttribute('data-processing-sources', location.search.substring(1,location.search.length)+'.pde');
+console.log(location.search.substring(1,location.search.length)+'.pde');
+</script>  
+</body>
 </html>
