@@ -2,33 +2,15 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script src="js/three.min.js"></script>
-    <script src="js/app.js"></script>
     <link rel="stylesheet" href="Jakesite.css" type="text/css" charset="utf-8" />
     <title>Jacob Trock's Website</title>
 </head>
 
 <body>
-
-    <div id="webgl" style="width:100%;height:100%;"></div>
-    <script>
-        var loader = new THREE.FileLoader();
-        loader.load('app.json', function (text) {
-
-            var player = new APP.Player();
-            player.load(JSON.parse(text));
-            player.setSize(window.innerWidth / 2, window.innerHeight / 2);
-            player.play();
-
-            document.getElementById("webgl").appendChild(player.dom);
-
-            window.addEventListener('resize', function () {
-                player.setSize(window.innerWidth / 2, window.innerHeight / 2);
-            });
-
-        });
-    </script>
-
+    <div id="side">
+        <iframe width="99%" height="650" style="overflow:hidden;" id="projView"
+        src="./programs/runner.html"></iframe>
+    </div>
     <div id="container">
         <center>
             <h1>Jacob Trock</h1>
@@ -76,8 +58,6 @@
                     <h3>Here are some interactive projects I have made for web browsers. Clicking on the links below
                         will change what project appears in the frame.
                         I recommend checking out the projects that I've starred.</h3>
-                    <iframe width="99%" height="650" style="overflow:hidden;" id="projView"
-                        src="./programs/runner.html"></iframe>
                     <script>
                         function pvchange(x) {
                             document.getElementById('projView').src = './programs/runner.html?' + x;

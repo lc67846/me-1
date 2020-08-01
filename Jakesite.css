@@ -6,3 +6,7 @@
     border: 3px solid #d8d8d8;
     box-shadow: 0px 0px 50px #444444;
 }
+#side {
+    right: 50%;
+    width: 50%;
+}
