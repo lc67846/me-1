@@ -9,6 +9,26 @@
 </head>
 
 <body>
+
+    <div id="webgl" style="width:100%;height:100%;"></div>
+    <script>
+        var loader = new THREE.FileLoader();
+        loader.load('app.json', function (text) {
+
+            var player = new APP.Player();
+            player.load(JSON.parse(text));
+            player.setSize(window.innerWidth / 2, window.innerHeight / 2);
+            player.play();
+
+            document.getElementById("webgl").appendChild(player.dom);
+
+            window.addEventListener('resize', function () {
+                player.setSize(window.innerWidth / 2, window.innerHeight / 2);
+            });
+
+        });
+    </script>
+
     <div id="container">
         <center>
             <h1>Jacob Trock</h1>
@@ -22,30 +42,6 @@
         </center>
         <hr>
         <div id="About">
-            <div class="section">
-                <div class="grid12 firstcol">
-                    <center>
-                        <div id="webgl"></div>
-                    </center>
-                </div>
-            </div>
-            <script>
-                var loader = new THREE.FileLoader();
-                loader.load('app.json', function (text) {
-
-                    var player = new APP.Player();
-                    player.load(JSON.parse(text));
-                    player.setSize(window.innerWidth / 2, window.innerHeight / 2);
-                    player.play();
-
-                    document.getElementById("webgl").appendChild(player.dom);
-
-                    window.addEventListener('resize', function () {
-                        player.setSize(window.innerWidth / 2, window.innerHeight / 2);
-                    });
-
-                });
-            </script>
             <div class="section">
                 <div class="grid12 firstcol">
                     <tr>
