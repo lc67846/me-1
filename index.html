@@ -108,14 +108,15 @@
         </div>
     </div>
 
-    <div id="window-prgdsp" style="display:none;width:800px;height:600px">
+    <div id="window-prgdsp" style="display:none;">
         <div id="titlebar">
             Example
             <button onclick="wintg('window-prg');wintg('window-prgdsp')" id="icb"><img src="closewin.png"
                     alt="Close Window"></button>
         </div>
-        <div id="container">
-            <canvas id="loadcv" width="800" height="600" data-processing-sources="./programs/mapgen/mapgen.pde"></canvas>
+        <div id="container" style="overflow: auto">
+            <canvas id="loadcv" width="800" height="600"
+                data-processing-sources="./programs/mapgen/mapgen.pde"></canvas>
         </div>
     </div>
 
