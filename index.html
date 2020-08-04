@@ -26,9 +26,7 @@
                 <button onclick="wintg('window-grp')">Graphic Design</button>
             </center>
             <hr>
-            <div id="footer">
-                <p>&copy;2019-2020 Jacob Trock. Some rights reserved.</p>
-            </div>
+            <p id="footer"></p>
         </div>
     </div>
 
@@ -76,28 +74,37 @@
                             will change what project appears in the frame.
                             I recommend checking out the projects that I've starred.</h3>
                         <ul>
-                            <li>* <button onclick="pvchange('autoagent')">autonomous navigation agent demo 1</button><br></li>
-                            <li><button onclick="pvchange('autoagent2')">autonomous navigation agent demo 2</button><br></li>
-                            <li><button onclick="pvchange('cellularAutomata')">Cellular automata pattern generator(click demo
+                            <li>* <button onclick="pvchange('autoagent')">autonomous navigation agent demo
+                                    1</button><br></li>
+                            <li><button onclick="pvchange('autoagent2')">autonomous navigation agent demo 2</button><br>
+                            </li>
+                            <li><button onclick="pvchange('cellularAutomata')">Cellular automata pattern generator(click
+                                    demo
                                     to
                                     randomize pattern)</a><br></li>
-                            <li><button onclick="pvchange('cursorFountain')">Cursor fountain 2d water physics demo</button><br>
+                            <li><button onclick="pvchange('cursorFountain')">Cursor fountain 2d water physics
+                                    demo</button><br>
                             </li>
-                            <li><button onclick="pvchange('digestiveSimulation')">Digestive bacterial simulation</button><br></li>
+                            <li><button onclick="pvchange('digestiveSimulation')">Digestive bacterial
+                                    simulation</button><br></li>
                             <li>* <button onclick="pvchange('flow3d')">3-d thermodynamic flow field</button><br></li>
-                            <li><button onclick="pvchange('fractalGameOfLife')">* fractallian patterns inserted into a game
+                            <li><button onclick="pvchange('fractalGameOfLife')">* fractallian patterns inserted into a
+                                    game
                                     of
                                     life ruleset(looks cool)</button><br></li>
-                            <li>* <button onclick="pvchange('grassyhills')">perlin noise 2d landscape generator</button><br></li>
+                            <li>* <button onclick="pvchange('grassyhills')">perlin noise 2d landscape
+                                    generator</button><br></li>
                             <li><button onclick="pvchange('growLine')">passive cursor-following navigational
                                     intelligence</button><br>
                             </li>
-                            <li><button onclick="pvchange('lineDefenderGame')">'line defender' game I made</button><br></li>
+                            <li><button onclick="pvchange('lineDefenderGame')">'line defender' game I made</button><br>
+                            </li>
                             <li><button onclick="pvchange('mapgen')">perlin noise map generator</button><br></li>
                             <li>* <button onclick="pvchange('paintSplatter')">procedural paint splats</button><br></li>
                             <li>* <button onclick="pvchange('partcoll')">particle collision simulation with groundwater
                                     absorption</button><br></li>
-                            <li><button onclick="pvchange('windBalloon')">Procedural random wind generation</button><br></li>
+                            <li><button onclick="pvchange('windBalloon')">Procedural random wind generation</button><br>
+                            </li>
                             <li>* <button onclick="pvchange('beachball')">"beach ball" 3-d newtonian physics
                                     simulation</button><br>
                             </li>
@@ -115,8 +122,7 @@
                     alt="Close Window"></button>
         </div>
         <div id="container" style="overflow: auto">
-            <canvas id="loadcv" width="800" height="600"
-                data-processing-sources="./programs/mapgen.pde"></canvas>
+            <canvas id="loadcv" width="800" height="600" data-processing-sources="./programs/mapgen.pde"></canvas>
         </div>
     </div>
 
@@ -301,6 +307,7 @@
         draggable(document.getElementById("window-prgdsp"));
         draggable(document.getElementById("window-rob"));
         draggable(document.getElementById("window-grp"));
+        cwri();
     </script>
 </body>
 
