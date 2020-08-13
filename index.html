@@ -4,8 +4,9 @@
 <head>
     <link rel="stylesheet" href="Jakesite.css" type="text/css" charset="utf-8" />
     <title>Jacob Trock's Website</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js"></script>
     <script src="winscript.js"></script>
+    <div id="scripts">
+    </div>
 </head>
 
 <body>
@@ -38,29 +39,28 @@
         <div id="container">
             <div id="About">
                 <div class="section">
-                    <div class="grid12 firstcol">
-                        <p>
-                            I live in Westport, CT, about an hour outside of New York city. I am a Senior in
-                            high school at Staples High School. My studies are focused on Computer Science so a
-                            sampling of Senior classes is, Calculus honors, AP Computer Science A, Applied
-                            Algorithmic
-                            Design and Advanced Statistics and Social Science. In my free time I enjoy
-                            programming, arguing about ethics and programming with friends, building stuff in my
-                            basement and refurbishing old electronics. I additionally
-                            enjoy teaching programming and electronics skills to children and teens at a local
-                            library. If you would like to know more about me, contact me at <a
-                                href="mailto:trock.j@northeastern.edu">trock.j@northeastern.edu</a> or view my
-                            <a href="res.pdf">resume</a> or check out my <a
-                                href="https://www.facebook.com/profile.php?id=100011775793086" target="_self">Facebook
-                                Page.</a>
-                        </p>
-                    </div>
+                    <center><img src="./images/headshot.jpg" width="120" height="182"></center>
+                    <p>
+                        I live in Westport, CT, about an hour outside of New York city. I am a Senior in
+                        high school at Staples High School. My studies are focused on Computer Science so a
+                        sampling of Senior classes is, Calculus honors, AP Computer Science A, Applied
+                        Algorithmic
+                        Design and Advanced Statistics and Social Science. In my free time I enjoy
+                        programming, arguing about ethics and programming with friends, building stuff in my
+                        basement and refurbishing old electronics. I additionally
+                        enjoy teaching programming and electronics skills to children and teens at a local
+                        library. If you would like to know more about me, contact me at <a
+                            href="mailto:trock.j@northeastern.edu">trock.j@northeastern.edu</a> or view my
+                        <a href="res.pdf">resume</a> or check out my <a
+                            href="https://www.facebook.com/profile.php?id=100011775793086" target="_self">Facebook
+                            Page.</a>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="window-prg" style="display: none; top: 285px; left: -214px;">
+    <div id="window-prg" style="display: none; top: 285px; left: -210px;">
         <div id="titlebar">
             Programming
             <button onclick="wintg('window-prg');wintg('window-prgdsp')" id="icb"><img src="closewin.png"
@@ -74,33 +74,30 @@
                             will change what project appears in the frame.
                             I recommend checking out the projects that I've starred.</h3>
                         <ul>
-                            <li>* <button onclick="pvchange('autoagent')">autonomous navigation agent demo
-                                    1</button><br></li>
+                            <!--<li>* <button onclick="pvchange('autoagent')">autonomous navigation agent demo
+                                    1</button><br></li>-->
                             <li><button onclick="pvchange('autoagent2')">autonomous navigation agent demo 2</button><br>
                             </li>
-                            <li><button onclick="pvchange('cellularAutomata')">Cellular automata pattern generator(click
+                            <li><button onclick="pvchange('cellautomata')">Cellular automata pattern generator(click
                                     demo
                                     to
                                     randomize pattern)</a><br></li>
-                            <li><button onclick="pvchange('cursorFountain')">Cursor fountain 2d water physics
+                            <li><button onclick="pvchange('cursorfountain')">Cursor fountain 2d water physics
                                     demo</button><br>
                             </li>
-                            <li><button onclick="pvchange('digestiveSimulation')">Digestive bacterial
-                                    simulation</button><br></li>
-                            <li>* <button onclick="pvchange('flow3d')">3-d thermodynamic flow field</button><br></li>
-                            <li><button onclick="pvchange('fractalGameOfLife')">* fractallian patterns inserted into a
-                                    game
-                                    of
-                                    life ruleset(looks cool)</button><br></li>
+                            <!--<li><button onclick="pvchange('digestivesimulation')">Digestive bacterial
+                                    simulation</button><br></li>-->
+                            <!--<li>* <button onclick="pvchange('flow3d')">3-d thermodynamic flow field</button><br></li>-->
+                            <!--<li><button onclick="pvchange('fractalGameOfLife')">* fractallian patterns inserted into a game of life ruleset(looks cool)</button><br></li>-->
                             <li>* <button onclick="pvchange('grassyhills')">perlin noise 2d landscape
                                     generator</button><br></li>
                             <li><button onclick="pvchange('growLine')">passive cursor-following navigational
                                     intelligence</button><br>
                             </li>
-                            <li><button onclick="pvchange('lineDefenderGame')">'line defender' game I made</button><br>
+                            <li><button onclick="pvchange('linedefender')">'line defender' game I made</button><br>
                             </li>
                             <li><button onclick="pvchange('mapgen')">perlin noise map generator</button><br></li>
-                            <li>* <button onclick="pvchange('paintSplatter')">procedural paint splats</button><br></li>
+                            <li>* <button onclick="pvchange('paintsplat')">procedural paint splats</button><br></li>
                             <li>* <button onclick="pvchange('partcoll')">particle collision simulation with groundwater
                                     absorption</button><br></li>
                             <li><button onclick="pvchange('windBalloon')">Procedural random wind generation</button><br>
@@ -115,14 +112,14 @@
         </div>
     </div>
 
-    <div id="window-prgdsp" style="display: none; top: 179px; left: 501px;">
+    <div id="window-prgdsp" style="display: none; top: 180px; left: 500px;">
         <div id="titlebar">
             Example
             <button onclick="wintg('window-prg');wintg('window-prgdsp')" id="icb"><img src="closewin.png"
                     alt="Close Window"></button>
         </div>
         <div id="container" style="overflow: auto">
-            <canvas id="loadcv" width="800" height="600" data-processing-sources="./programs/mapgen.pde"></canvas>
+            <div id="prgcontainer"></div>
         </div>
     </div>
 
@@ -304,7 +301,7 @@
         draggable(document.getElementById("window-abt"));
         draggable(document.getElementById("window-prg"));
         draggable(document.getElementById("window-prgor"));
-        draggable(document.getElementById("window-prgdsp"));
+//         draggable(document.getElementById("window-prgdsp"));
         draggable(document.getElementById("window-rob"));
         draggable(document.getElementById("window-grp"));
         cwri();
