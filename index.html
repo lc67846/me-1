@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="Jakesite.css" type="text/css" charset="utf-8" />
     <title>Jacob Trock's Website</title>
     <script src="winscript.js"></script>
+<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script> -->
     <div id="scripts">
     </div>
 </head>
@@ -76,8 +77,8 @@
                         <ul>
                             <!--<li>* <button onclick="pvchange('autoagent')">autonomous navigation agent demo
                                     1</button><br></li>-->
-                            <li><button onclick="pvchange('autoagent2')">autonomous navigation agent demo 2</button><br>
-                            </li>
+                            <!--<li><button onclick="pvchange('autoagent2')">autonomous navigation agent demo 2</button><br>
+                            </li>-->
                             <li><button onclick="pvchange('cellautomata')">Cellular automata pattern generator(click
                                     demo
                                     to
@@ -297,14 +298,14 @@
     </div>
 
     <script>
-        draggable(document.getElementById("window-main"));
-        draggable(document.getElementById("window-abt"));
-        draggable(document.getElementById("window-prg"));
-        draggable(document.getElementById("window-prgor"));
-//         draggable(document.getElementById("window-prgdsp"));
-        draggable(document.getElementById("window-rob"));
-        draggable(document.getElementById("window-grp"));
-        cwri();
+        draggable("window-main");
+        draggable("window-abt");
+        draggable("window-prg");
+        draggable("window-prgor");
+        draggable("window-prgdsp");
+        draggable("window-rob");
+        draggable("window-grp");
+        (function(){var a=new Date;document.getElementById("footer").innerHTML="&copy;2019-"+a.getFullYear()+" Jacob Trock"})();
     </script>
 </body>
 
