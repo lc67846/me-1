@@ -1,7 +1,7 @@
 let cell, tick = 0, rate=20000;
 function setup() {
   cell = new CA();
-  createCanvas(800, 600).parent('prgcontainer');
+  createCanvas(800, 600);
   background(245);
   frameRate(rate);
 }

@@ -3,7 +3,7 @@ let water;
 
 let gravity;
 function setup() {
-  createCanvas(800, 600).parent('prgcontainer');
+  createCanvas(800, 600);
   water={
   "x":  
   0, 

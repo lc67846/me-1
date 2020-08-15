@@ -1,6 +1,6 @@
 let bullets=[], enemies=[], starcrawl=[], bl=250, psecond, sh=0, wallshade=0, start=true, gameplay=false, dead=false, band;
 function setup() {
-  createCanvas(800, 600).parent('prgcontainer');
+  createCanvas(800, 600);
   for (let i = 0; i<150; i++)starcrawl.push(new Star());
   noStroke();
 }

@@ -1,7 +1,7 @@
 let gbl;
 
 function setup() {
-  createCanvas(800,600).parent('prgcontainer');
+  createCanvas(800,600);
   gbl = new Vehicle(createVector(width/2, height/2));
   background(245);
   text("Click to clear",10,10)

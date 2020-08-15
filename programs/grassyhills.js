@@ -2,7 +2,7 @@ let r, d;
 let white, clrBlue, orange, brown, black;
 function setup() {
   r = random(0, 1000);
-  createCanvas(800, 600).parent('prgcontainer');
+  createCanvas(800, 600);
   white = color('white'); 
   clrBlue = color('blue');
   orange = color('orange'); 

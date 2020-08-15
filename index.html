@@ -5,9 +5,6 @@
     <link rel="stylesheet" href="Jakesite.css" type="text/css" charset="utf-8" />
     <title>Jacob Trock's Website</title>
     <script src="winscript.js"></script>
-<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script> -->
-    <div id="scripts">
-    </div>
 </head>
 
 <body>
@@ -22,7 +19,7 @@
             <hr>
             <center>
                 <button onclick="wintg('window-abt')">About</button>
-                <button onclick="wintg('window-prg');wintg('window-prgdsp')">Programming</button>
+                <button onclick="wintg('window-prg')">Programming</button>
                 <button onclick="wintg('window-prgor')">Programming(Outreach)</button>
                 <button onclick="wintg('window-rob')">Robotics</button>
                 <button onclick="wintg('window-grp')">Graphic Design</button>
@@ -77,8 +74,8 @@
                         <ul>
                             <!--<li>* <button onclick="pvchange('autoagent')">autonomous navigation agent demo
                                     1</button><br></li>-->
-                            <!--<li><button onclick="pvchange('autoagent2')">autonomous navigation agent demo 2</button><br>
-                            </li>-->
+                            <li><button onclick="pvchange('autoagent2')">autonomous navigation agent demo 2</button><br>
+                            </li>
                             <li><button onclick="pvchange('cellautomata')">Cellular automata pattern generator(click
                                     demo
                                     to
@@ -113,17 +110,6 @@
         </div>
     </div>
 
-    <div id="window-prgdsp" style="display: none; top: 180px; left: 500px;">
-        <div id="titlebar">
-            Example
-            <button onclick="wintg('window-prg');wintg('window-prgdsp')" id="icb"><img src="closewin.png"
-                    alt="Close Window"></button>
-        </div>
-        <div id="container" style="overflow: auto">
-            <div id="prgcontainer"></div>
-        </div>
-    </div>
-
     <div id="window-prgor" style="display:none">
         <div id="titlebar">
             Programming Outreach
@@ -135,8 +121,7 @@
                     <div class="grid4 sidebar">
                         <div class="box">
                             <p class="large">
-                                Programming is my third arm with which I can reach out and interact with the world. I
-                                believe it to be a skill that would be of utmost use to future generations, so I try my
+                                I believe programming to be a skill that would be of utmost use to future generations, so I try my
                                 hardest to democratize what I know. Programming may allow me to solve problems
                                 quickly and be a valuable asset in engineering competitions, but it is also quite the
                                 enjoyable leisure. If you're interested, please head to my <a
@@ -302,7 +287,6 @@
         draggable("window-abt");
         draggable("window-prg");
         draggable("window-prgor");
-        draggable("window-prgdsp");
         draggable("window-rob");
         draggable("window-grp");
         (function(){var a=new Date;document.getElementById("footer").innerHTML="&copy;2019-"+a.getFullYear()+" Jacob Trock"})();

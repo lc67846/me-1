@@ -1,7 +1,7 @@
 let balloons=[];
 let gravity, lift, wind;  
 function setup() {
-  createCanvas(800, 600).parent('prgcontainer');
+  createCanvas(800, 600);
   gravity = createVector(0, 0.2);
   lift = createVector(0, -0.21);
   for (let i=0; i<100; i++)balloons.push(new balloon(createVector(random(0, width), random(0, height))));

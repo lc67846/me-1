@@ -1,7 +1,7 @@
 let beachballs = [];
 let pl;
 function setup() {
-  createCanvas(800, 600, WEBGL).parent('prgcontainer');
+  createCanvas(800, 600, WEBGL);
   pl = new ocean(width/2, height/2, -100, 500, 200, 500);
   noStroke();
 }

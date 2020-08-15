@@ -1,7 +1,7 @@
 let car;
 
 function setup() {
-  createCanvas(800,600).parent('prgcontainer');
+  createCanvas(800,600);
   car = new Vehicle(createVector(width/2, height/2));
 }
 

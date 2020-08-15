@@ -1,6 +1,6 @@
 let darkblue, lightblue, waterlevel, grass, mountains, n, c, index, d;
 function setup() {
-  createCanvas(800, 600).parent('prgcontainer');
+  createCanvas(800, 600);
   darkblue = color(20, 20, 150);
   lightblue = color(100, 100, 255);
   waterlevel = 120;

@@ -3,7 +3,7 @@ let setPiece, mouse;
 function setup() {
   mouse=createVector(0, 0);
   setPiece = new crater();
-  createCanvas(800, 600).parent('prgcontainer');
+  createCanvas(800, 600);
 }
 
 

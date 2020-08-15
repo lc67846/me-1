@@ -1,6 +1,6 @@
 let splats = [];
 function setup() {
-  createCanvas(800, 600).parent('prgcontainer');
+  createCanvas(800, 600);
   background(245);
   fill(0);
   text("click to make a paintsplat!", 50, 50);

@@ -21,8 +21,7 @@ body {
 #window-prg,
 #window-rob,
 #window-grp,
-#window-prgor,
-#window-prgdsp {
+#window-prgor {
     width: 50%;
     position: absolute;
     z-index: 3;
